@@ -149,7 +149,7 @@ h1 {
 - 最後は終了時の値をキープ。(100pxのままで、50pxには戻らない。) 
 
 画像のように文字が大きくなったり小さくなったりを2回繰り返して、最後は大きい文字のまま止まればOKです。
-![bigger_font](./img/html/bigger_font.png)
+![bigger_font](./img/bigger_font.png)
 
 
 ## 5. 省略した書き方
@@ -168,7 +168,7 @@ h1 {
     animation-fill-mode: forwards;
 }
 ```
-![arrow](./img/html/arrow.png)
+![arrow](./img/arrow.png)
 ```css
 h1 {
     font-size: 50px;
@@ -287,7 +287,7 @@ button {
 }
 ```
 画像のようにカーソルがボタンの上部にある時、色が赤から青に変わります。
-![](./img/html/button_hover.jpg)
+![](./img/button_hover.jpg)
 
 アニメーションの説明は以上になります。
 <br>
