@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    border: 1px solid black;
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1 {
+    /* font-size: 50px;
+    animation-name: bigger-font;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: .5s;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-fill-mode: forwards; */
+    animation: bigger-font 3s linear .5s 2 normal forwards;
+}
+@keyframes bigger-font {
+    from {
+        font-size: 50px;
+    }
+    to {
+        font-size: 100px;
+    }
+}
+button {
+    margin-top: 100px;
+    padding: 8px 20px;
+    background-color: red;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+
+    /* transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s; */
+    transition: background-color 2s linear 1s;
+}
+/* カーソルがボタンの上部にある時、色が赤から青に変わる。 */
+button:hover {
+    background-color: blue;
+}
