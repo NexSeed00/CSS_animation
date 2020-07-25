@@ -1,16 +1,18 @@
+/* ↓ 見た目を整えるためのCSS ↓ */
+/* flexboxの復習も兼ねる */
 * {
     margin: 0;
-    padding: 0;
 }
 .container {
-    border: 1px solid black;
     width: 100vw;
-    height: 700px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+/* ↑ 見た目を整えるためのCSS ↑ */
+
 h1 {
     /* font-size: 50px;
     animation-name: bigger-font;
@@ -20,8 +22,10 @@ h1 {
     animation-iteration-count: 2;
     animation-direction: normal;
     animation-fill-mode: forwards; */
-    animation: bigger-font 3s linear .5s 2 normal forwards;
+    /* animation: bigger-font 3s linear .5s 2 normal forwards; */
 }
+
+/* from toのパターン */
 @keyframes bigger-font {
     from {
         font-size: 50px;
@@ -30,8 +34,20 @@ h1 {
         font-size: 100px;
     }
 }
+/* ％のパターン */
+@keyframes bigger-font {
+    0% {
+        font-size: 50px;
+    }
+    50% {
+        font-size: 150px;
+    }
+    100% {
+        font-size: 100px;
+    }
+}
 button {
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 8px 20px;
     background-color: red;
     border-radius: 8px;
@@ -42,9 +58,25 @@ button {
     transition-duration: 2s;
     transition-timing-function: linear;
     transition-delay: 1s; */
-    transition: background-color 2s linear 1s;
+    /* transition: background-color 2s linear 1s; */
+    
+    /* transition-nameはallにするパターンも */
+    /* transition: all 2s linear 1s; */
 }
 /* カーソルがボタンの上部にある時、色が赤から青に変わる。 */
 button:hover {
     background-color: blue;
 }
+
+/* 時間に余裕があれば */
+
+img {
+    height: 200px;
+    margin-top: 50px;
+    transition: all .5s;
+}
+img:hover {
+    box-shadow: 0 0 10px grey;
+}
+
+/* 時間に余裕があれば */
